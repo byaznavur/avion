@@ -239,3 +239,21 @@ footer {
   color: #fff;
   font-size: 20px;
 }
+@media screen and (max-width: 768px) {
+  .footer-top {
+    flex-wrap: wrap;
+  }
+
+  .footer-form input {
+    max-width: 214px;
+  }
+  .footer-form button {
+    max-width: 118px;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}
