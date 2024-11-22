@@ -3,35 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-    <title>Avion | Home</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>Home | Avion</title>
   </head>
   <body>
     <header>
       <nav class="container">
         <a class="logo" href="./index.html">Avion</a>
-        <ul class="list">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/about.html">About</a></li>
-          <li><a href="./pages/products.html">Products</a></li>
-        </ul>
 
-        <span class="demoAuth">
-          <a href="#"><i class="bx bx-search"></i></a>
-          <a href="./pages/cart.html"><i class="bx bxs-shopping-bag"></i></a>
-          <a href="./pages/accont.html"><i class="bx bx-log-in"></i></a>
-        </span>
+        <ul class="list">
+          <li>
+            <a class="nav-link" href="./pages/about.html">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./pages/products.html">Products</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./pages/productdetails.html"
+              >Product Details</a
+            >
+          </li>
+        </ul>
+        <div class="icons">
+          <input class="nav-input" type="text" placeholder="Search" />
+          <a class="search-btn icons-link" href="#"
+            ><img src="./image/search.svg" alt="Search"
+          /></a>
+          <a class="icons-link" href="./pages/cart.html"
+            ><img src="./image/cart.svg" alt=""
+          /></a>
+          <a class="icons-link" href=""
+            ><img src="./image/acount.svg" alt=""
+          /></a>
+        </div>
+        <button class="menu">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="
+            alt="Menu"
+          />
+        </button>
       </nav>
     </header>
     <main></main>
     <footer>
       <div class="footer container">
-        <div class="footer-info">
-          <div class="footer-rows">
+        <div class="footer-top">
+          <div class="footer-top-content">
             <a href="#">Menu</a>
             <a href="#">New arrivals</a>
             <a href="#">Best sellers</a>
@@ -39,43 +61,59 @@
             <a href="#">Popular this week</a>
             <a href="#">All products</a>
           </div>
-          <div class="footer-rows">
+          <div class="footer-top-content">
             <a href="#">Categories</a>
             <a href="#">Crockery</a>
             <a href="#">Furniture</a>
             <a href="#">Homeware</a>
             <a href="#">Plant pots</a>
-            <a href="#">Chairs </a>
+            <a href="#">Chairs</a>
             <a href="#">Crockery</a>
           </div>
-          <div class="footer-rows">
-            <a href="">Our company</a>
-            <a href="">About us</a>
-            <a href="">Vacancies</a>
-            <a href="">Contact us</a>
-            <a href="">Privacy</a>
-            <a href="">Returns policy</a>
+          <div class="footer-top-content">
+            <a href="#">Our company</a>
+            <a href="#">About us</a>
+            <a href="#">Vacancies</a>
+            <a href="#">Contact us</a>
+            <a href="#">Privacy</a>
+            <a href="#">Returns policy</a>
           </div>
-          <div class="footer-rows">
-            <a href="">Join our mailing list</a>
 
-            <div class="footer-form">
-              <input type="text" /> <button>Sign Up</button>
-            </div>
+          <div class="footer-top-content">
+            <span> Join our mailing list </span>
+
+            <form class="footer-form">
+              <input type="text" placeholder="your@email.com" />
+              <button class="footer-button">Sign up</button>
+            </form>
           </div>
         </div>
-        <div class="footer-social">
-          <span> Copyright 2022 Avion LTD </span>
-          <div class="social-icons">
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
-            <a href="#"><i class="bx bxl-facebook-square"></i></a>
-            <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-spotify"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
-            <a href="#"><i class="bx bxl-pinterest"></i></a>
+        <div class="footer-bottom">
+          <h3>Copyright 2022 Avion LTD</h3>
+
+          <div class="footer-socials">
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-pinterest-alt"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-sass"></i>
+            </a>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

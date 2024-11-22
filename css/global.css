@@ -1,0 +1,241 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px 20px;
+  }
+}
+
+/* !header*/
+
+header {
+  padding: 10px 0;
+}
+
+.logo {
+  font-family: Clash Display;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 29.52px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #22202e;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 2px solid rgb(114, 110, 141);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.menu {
+  display: none;
+}
+.nav-input {
+  position: absolute;
+  display: none;
+  right: 200px;
+  padding: 10px 20px;
+  color: rgb(114, 110, 141);
+}
+
+.nav-link {
+  color: rgb(114, 110, 141);
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.showInput {
+  position: absolute;
+  display: block;
+  padding: 10px 20px;
+  color: rgb(114, 110, 141);
+  width: 250px;
+  right: 220px;
+}
+.icons-link img {
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+  }
+
+  .show {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    padding: 20px 0;
+    gap: 20px;
+    background: #22202e;
+    min-height: 50vh;
+  }
+
+  .showInput {
+    position: absolute;
+    display: block;
+    top: 72px;
+    padding: 10px 20px;
+    color: rgb(114, 110, 141);
+    width: 100%;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+  .menu img {
+    width: 22px;
+    height: 22px;
+  }
+}
+main {
+  height: 100vh;
+}
+/* footer */
+
+footer {
+  background: rgb(42, 37, 75);
+  padding: 10px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 20px;
+}
+
+.footer-top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-top-content a {
+  color: rgb(255, 255, 255);
+  font-family: Clash Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-top-content span {
+  color: rgb(255, 255, 255);
+  font-family: Clash Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-form input {
+  padding: 19px 32px;
+  background: rgba(255, 255, 255, 0.15);
+  color: rgb(255, 255, 255);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 509px;
+  border: none;
+}
+
+.footer-form .footer-button {
+  padding: 17px 32px;
+  background: rgb(255, 255, 255);
+  color: rgb(42, 37, 75);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  border: none;
+  margin-left: -5px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.footer-bottom h3 {
+  color: rgb(255, 255, 255);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+.footer-socials a i {
+  color: #fff;
+  font-size: 20px;
+}
