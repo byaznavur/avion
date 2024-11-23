@@ -30,3 +30,55 @@ const brand = [
     desc: "We use 100% recycled packaging to ensure our footprint is manageable",
   },
 ];
+
+const ceramics = [
+  {
+    id: 0,
+    img: "../image/1.png",
+    title: "The Dandy chair",
+    price: "£200",
+    newProduct: true,
+  },
+  {
+    img: "../image/2.png",
+    title: "Rustic Vase Set",
+    price: "£220",
+    newProduct: false,
+  },
+  {
+    img: "../image/3.png",
+    title: "The Silky Vase",
+    price: "£250",
+    newProduct: true,
+  },
+  {
+    img: "../image/4.png",
+    title: "The Lucy Lamp",
+    price: "£250",
+    newProduct: false,
+  },
+  {
+    img: "../image/5.png",
+    title: "The Dandy chair",
+    price: "£150",
+    newProduct: true,
+  },
+  {
+    img: "../image/6.png",
+    title: "The Dandy chair",
+    price: "£350",
+    newProduct: false,
+  },
+  {
+    img: "../image/7.png",
+    title: "Rustic Vase Set",
+    price: "£200",
+    newProduct: true,
+  },
+  {
+    img: "../image/8.png",
+    title: "The Lucy Lamp",
+    price: "£120",
+    newProduct: false,
+  },
+];

@@ -154,3 +154,95 @@
     width: 100%;
   }
 }
+
+/* ! Ceramics cards */
+
+.ceramics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ceramics h2 {
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39.36px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2a254b;
+}
+
+.ceramic-cards {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ceramic-card {
+  position: relative;
+}
+
+.ceramic-card span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  background-color: red;
+  padding: 4px;
+  border-radius: 5px;
+}
+.ceramic-card h3 {
+  font-family: Clash Display;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2a254b;
+}
+
+.ceramic-card p {
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2a254b;
+}
+
+.ceramics a {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #2a254b;
+  color: #f9f9f9;
+  padding: 20px 30px;
+  text-align: center;
+  transition: all 0.7s ease-in-out;
+}
+
+.ceramics a:hover {
+  background-color: #f9f9f9;
+  color: #2a254b;
+}
+
+@media screen and (max-width: 768px) {
+  .ceramic-cards {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .ceramics a {
+    width: 100%;
+  }
+}

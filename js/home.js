@@ -1,5 +1,5 @@
 const herroCategory = document.querySelector(".herro-category");
-
+const ceramicCards = document.querySelector(".ceramic-cards");
 function getCategory(el) {
   return `<a href ="#">${el}</a>`;
 }
@@ -19,3 +19,20 @@ function getBrand(el) {
 }
 
 brand.map((el) => (brandCards.innerHTML += getBrand(el)));
+
+function getCeramics(el) {
+  return `
+  <div class="ceramic-card">
+  <span>new</span>
+   <img src=${el.img} alt="" />
+     <h3>${el.title}</h3>
+    <p>${el.price}</p>
+  </div>
+          `;
+}
+
+ceramics.map((el) => {
+  if (el.newProduct) {
+    ceramicCards.innerHTML += getCeramics(el);
+  }
+});
