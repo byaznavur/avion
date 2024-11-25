@@ -44,6 +44,7 @@ const ceramics = [
     title: "Rustic Vase Set",
     price: "£220",
     newProduct: false,
+    popular: true,
   },
   {
     img: "../image/3.png",
@@ -56,6 +57,7 @@ const ceramics = [
     title: "The Lucy Lamp",
     price: "£250",
     newProduct: false,
+    popular: true,
   },
   {
     img: "../image/5.png",
@@ -68,6 +70,7 @@ const ceramics = [
     title: "The Dandy chair",
     price: "£350",
     newProduct: false,
+    popular: true,
   },
   {
     img: "../image/7.png",
@@ -80,5 +83,6 @@ const ceramics = [
     title: "The Lucy Lamp",
     price: "£120",
     newProduct: false,
+    popular: true,
   },
 ];

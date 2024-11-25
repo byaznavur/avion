@@ -246,3 +246,368 @@
     width: 100%;
   }
 }
+
+/*  ! Popular products */
+
+.popular-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popular-products h2 {
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39.36px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2a254b;
+}
+
+.popular-cards {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.popular-card {
+  position: relative;
+}
+
+.popular-card span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  background-color: red;
+  padding: 4px;
+  border-radius: 5px;
+}
+.popular-card h3 {
+  font-family: Clash Display;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2a254b;
+}
+
+.popular-card p {
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2a254b;
+}
+
+.popular-products a {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #2a254b;
+  color: #f9f9f9;
+  padding: 20px 30px;
+  text-align: center;
+  transition: all 0.7s ease-in-out;
+}
+
+.popular-products a:hover {
+  background-color: #f9f9f9;
+  color: #2a254b;
+}
+
+@media screen and (max-width: 768px) {
+  .popular-cards {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .popular-products a {
+    width: 100%;
+  }
+}
+
+/* ! join */
+
+.join {
+  background-color: #f9f9f9;
+  padding: 52px 93px;
+}
+
+.join-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.join-card h3 {
+  /* Headings / H1 */
+  color: rgb(42, 37, 75);
+  font-family: Clash Display;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.join-card p {
+  /* Body/Medium */
+  color: rgb(42, 37, 75);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.join-input {
+  margin: 0 auto;
+}
+.join-input input {
+  background-color: #f9f9f9;
+  color: rgb(42, 37, 75);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 10px 32px;
+}
+
+.join-input button {
+  /* Dark Primary */
+  background: rgb(42, 37, 75);
+  /* Body/Medium */
+  color: rgb(255, 255, 255);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 10px 20px;
+  margin-left: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .join {
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+
+  .join-card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .join-card h3 {
+    /* Headings / H4 */
+    color: rgb(42, 37, 75);
+    font-family: Clash Display;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .join-card p {
+    /* Body/Small */
+    color: rgb(42, 37, 75);
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .join-input {
+    margin: 0 auto;
+  }
+  .join-input input {
+    background-color: #f9f9f9;
+    color: rgb(42, 37, 75);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 8px 15px;
+  }
+
+  .join-input button {
+    /* Dark Primary */
+    background: rgb(42, 37, 75);
+    /* Body/Medium */
+    color: rgb(255, 255, 255);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 8px 15px;
+    margin-left: -10px;
+  }
+}
+
+/* ! outlet */
+.outlet {
+  display: flex;
+  align-items: start;
+  position: relative;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+}
+
+.outlet-info {
+  padding: 72px 0;
+  width: 50%;
+}
+
+.outlet-info h3 {
+  color: rgb(42, 37, 75);
+  font-family: Clash Display;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.outlet-info p {
+  color: rgb(80, 89, 119);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.outlet-info button {
+  position: absolute;
+  bottom: 54px;
+  padding: 10px 20px;
+  /* Light Grey */
+  background: rgb(249, 249, 249);
+  /* Body/Medium */
+  color: rgb(42, 37, 75);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+
+.outlet-info button:hover {
+  color: #f9f9f9;
+  background-color: #2a254b;
+  transform: scale(1.1);
+}
+
+.outlet-image {
+  width: 50%;
+}
+
+.outlet-image img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .outlet {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .outlet-info {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .outlet-info h3 {
+    color: rgb(42, 37, 75);
+    font-family: Clash Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .outlet-info p {
+    color: rgb(80, 89, 119);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .outlet-info button {
+    position: relative;
+    bottom: 0;
+    padding: 10px 20px;
+    /* Light Grey */
+    background: rgb(249, 249, 249);
+    /* Body/Medium */
+    color: rgb(42, 37, 75);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    transition: all 0.6s ease;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+
+  .outlet-info button:hover {
+    color: #f9f9f9;
+    background-color: #2a254b;
+    transform: scale(1.1);
+  }
+
+  .outlet-image {
+    width: 100%;
+  }
+
+  .outlet-image img {
+    width: 100%;
+  }
+}
