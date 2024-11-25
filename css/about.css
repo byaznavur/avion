@@ -1,1 +1,92 @@
+.herro-category {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  padding: 10px 0;
+}
 
+.about-wrapper {
+  padding: 67px 10px;
+}
+
+.about-wrapper h2 {
+  text-align: center;
+  color: rgb(42, 37, 75);
+  font-family: Clash Display;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.about-join {
+  background-image: url("../image/about-join.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 60px 0;
+}
+.join-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.about-join h3 {
+  /* Headings / H2 */
+  color: rgb(255, 255, 255);
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.about-join p {
+  /* Body / Large */
+  color: rgb(255, 255, 255);
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.about-res {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .join-content {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .about-res {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .about-join h3 {
+    text-align: start;
+  }
+  .about-join p {
+    text-align: start;
+  }
+}
