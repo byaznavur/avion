@@ -3,11 +3,167 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/home.css" />
     <title>Products | Avion</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav class="container">
+        <a class="logo" href="../index.html">Avion</a>
+
+        <ul class="list">
+          <li>
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./products.html">Products</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./productdetails.html">Product Details</a>
+          </li>
+        </ul>
+        <div class="icons">
+          <input class="nav-input" type="text" placeholder="Search" />
+          <a class="search-btn icons-link" href="#"
+            ><img src="../image/search.svg" alt="Search"
+          /></a>
+          <a class="icons-link" href="./pages/cart.html"
+            ><img src="../image/cart.svg" alt=""
+          /></a>
+          <a class="icons-link" href=""
+            ><img src="../image/acount.svg" alt=""
+          /></a>
+        </div>
+        <button class="menu">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="
+            alt="Menu"
+          />
+        </button>
+      </nav>
+    </header>
+    <main>
+      <div class="container herro-category"></div>
+
+      <section class="herro-products container">
+        <div class="container products-wrapper">
+          <h2>All Products</h2>
+        </div>
+
+        <div class="all-products">
+          <div class="sidebar">
+            <ul>
+              <li><input type="checkbox" />Furniture</li>
+              <li><input type="checkbox" />Homeware</li>
+              <li><input type="checkbox" />Sofas</li>
+              <li><input type="checkbox" />Homeware</li>
+              <li><input type="checkbox" />Light fittings</li>
+              <li><input type="checkbox" />Accessories</li>
+            </ul>
+            <ul>
+              <li><input type="checkbox" />0 - 100</li>
+              <li><input type="checkbox" />101 250</li>
+              <li><input type="checkbox" />250+</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="product-order">
+              <select>
+                <option value="one">Furniture</option>
+                <option value="two">Homeware</option>
+                <option value="three">Sofas</option>
+                <option value="four">Light fittings</option>
+                <option value="five">Accessories</option>
+              </select>
+              <select>
+                <option value="one">0 - 100</option>
+                <option value="two">101 - 250</option>
+                <option value="three">250+</option>
+              </select>
+            </div>
+            <div class="product-cards"></div>
+
+            <button class="all-products-btn">Load More</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer container">
+        <div class="footer-top">
+          <div class="footer-top-content">
+            <a href="#">Menu</a>
+            <a href="#">New arrivals</a>
+            <a href="#">Best sellers</a>
+            <a href="#">Recently viewed</a>
+            <a href="#">Popular this week</a>
+            <a href="#">All products</a>
+          </div>
+          <div class="footer-top-content">
+            <a href="#">Categories</a>
+            <a href="#">Crockery</a>
+            <a href="#">Furniture</a>
+            <a href="#">Homeware</a>
+            <a href="#">Plant pots</a>
+            <a href="#">Chairs</a>
+            <a href="#">Crockery</a>
+          </div>
+          <div class="footer-top-content">
+            <a href="#">Our company</a>
+            <a href="#">About us</a>
+            <a href="#">Vacancies</a>
+            <a href="#">Contact us</a>
+            <a href="#">Privacy</a>
+            <a href="#">Returns policy</a>
+          </div>
+
+          <div class="footer-top-content">
+            <span> Join our mailing list </span>
+
+            <form class="footer-form">
+              <input type="text" placeholder="your@email.com" />
+              <button class="footer-button">Sign</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <h3>Copyright 2022 Avion LTD</h3>
+
+          <div class="footer-socials">
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-pinterest-alt"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-sass"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

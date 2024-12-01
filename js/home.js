@@ -1,13 +1,12 @@
 const herroCategory = document.querySelector(".herro-category");
 const ceramicCards = document.querySelector(".ceramic-cards");
 const popularCards = document.querySelector(".popular-cards");
+const brandCards = document.querySelector(".brand-cards");
 function getCategory(el) {
   return `<a href ="#">${el}</a>`;
 }
 
 category.map((el) => (herroCategory.innerHTML += getCategory(el)));
-
-const brandCards = document.querySelector(".brand-cards");
 
 function getBrand(el) {
   return `

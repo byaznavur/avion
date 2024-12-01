@@ -1,0 +1,148 @@
+.products-wrapper {
+  background-image: url("../image/product-herro.png");
+  padding: 139px 0 39px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  min-height: 210px;
+}
+.products-wrapper h2 {
+  /* Headings / H1 */
+  color: rgb(255, 255, 255);
+  font-family: Clash Display;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .herro-products {
+    padding: 39px 0;
+  }
+  .products-wrapper h2 {
+    text-align: center;
+  }
+}
+
+.all-products {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sidebar ul li {
+  /* Body/Medium */
+  color: rgb(42, 37, 75);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.sidebar ul li input {
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 2px;
+
+  /* White */
+  background: rgb(255, 255, 255);
+}
+.product-order {
+  display: none;
+}
+
+.all-products-btn {
+  margin: 0 auto;
+  padding: 16px 32px 16px 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* Light Grey */
+  background: rgb(249, 249, 249);
+  border-radius: 8px;
+  /* Body/Medium */
+  color: rgb(42, 37, 75);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease;
+}
+
+.all-products-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .product-order {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-order {
+    gap: 10px;
+  }
+
+  .product-order select {
+    padding: 16px 30px;
+  }
+
+  .product-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .all-card {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
