@@ -1,0 +1,157 @@
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.details-image {
+  width: 50%;
+}
+
+.details-image img {
+  width: 100%;
+}
+
+.details-info h2 {
+  color: rgb(42, 37, 75);
+  font-family: Clash Display;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.details-info h4 {
+  color: rgb(18, 19, 26);
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.details-info h3 {
+  color: rgb(42, 37, 75);
+  font-family: Clash Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.details-info p {
+  color: rgb(80, 89, 119);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.details-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details-info ul li {
+  list-style: circle;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+thead tr {
+  display: flex;
+  gap: 10px;
+}
+tbody tr {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.addToCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnCart {
+  color: rgb(42, 37, 75);
+  font-family: Clash Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.btnCart span {
+}
+
+.btnCart span button {
+  color: rgb(202, 198, 218);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 10px 20px;
+  border: none;
+}
+
+.addBtn {
+  /* Body/Medium */
+  color: rgb(255, 255, 255);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* Dark Primary */
+  background: rgb(42, 37, 75);
+}
+
+@media screen and (max-width: 768px) {
+  .details {
+    flex-direction: column;
+  }
+
+  .details-info {
+    gap: 30px;
+    width: 100%;
+  }
+
+  .details-image {
+    width: 100%;
+  }
+
+  .addToCart {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .addBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
