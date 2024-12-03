@@ -1,8 +1,10 @@
 const menuBtn = document.querySelector(".menu");
 const menuImg = document.querySelector(".menu img");
 const list = document.querySelector(".list");
-const search = document.querySelector(".search-btn");
+const searchBtn = document.querySelector(".search-btn");
 const navInput = document.querySelector(".nav-input");
+
+const loading = document.querySelector(".loading");
 const menuSrc =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII=";
 
@@ -22,6 +24,20 @@ menuBtn.addEventListener("click", () => {
   isMenuOpen = !isMenuOpen;
 });
 
-search.addEventListener("click", () => {
+searchBtn.addEventListener("click", () => {
   navInput.classList.toggle("showInput");
+});
+
+window.addEventListener("load", () => {
+  loading.classList.add("loading-hidden");
+});
+
+const backtop = document.querySelector(".backtop");
+
+window.addEventListener("scroll", () => {
+  if (scrollY > 200) {
+    backtop.classList.add("backtop-show");
+  } else {
+    backtop.classList.remove("backtop-show");
+  }
 });

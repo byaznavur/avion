@@ -12,8 +12,19 @@
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/home.css" />
     <title>Products | Avion</title>
+
+    <style>
+      .active {
+        background-color: red;
+      }
+
+      ul {
+        display: flex;
+      }
+    </style>
   </head>
   <body>
+    <div class="loading">Loading...</div>
     <header>
       <nav class="container">
         <a class="logo" href="../index.html">Avion</a>
@@ -89,7 +100,15 @@
                 <option value="three">250+</option>
               </select>
             </div>
+
+            <div>
+              <span class="product-total"></span
+              ><input class="search" type="text" placeholder="Search" />
+            </div>
+
             <div class="product-cards"></div>
+
+            <ul class="pagination"></ul>
 
             <button class="all-products-btn">Load More</button>
           </div>
@@ -160,6 +179,8 @@
         </div>
       </div>
     </footer>
+
+    <a href="#" class="backtop"><i class="bx bx-up-arrow-alt"></i></a>
 
     <script src="../js/data.js"></script>
     <script src="../js/home.js"></script>
