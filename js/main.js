@@ -3,6 +3,7 @@ const menuImg = document.querySelector(".menu img");
 const list = document.querySelector(".list");
 const searchBtn = document.querySelector(".search-btn");
 const navInput = document.querySelector(".nav-input");
+const cartCount = document.querySelector(".cart-count");
 
 const loading = document.querySelector(".loading");
 const menuSrc =
@@ -41,3 +42,13 @@ window.addEventListener("scroll", () => {
     backtop.classList.remove("backtop-show");
   }
 });
+
+let cartJson = localStorage.getItem("cart");
+
+let cart = JSON.parse(cartJson) || [];
+
+function getCartCount() {
+  cartCount.textContent = cart.length;
+}
+
+getCartCount();

@@ -40,6 +40,7 @@ const ceramics = [
     newProduct: true,
   },
   {
+    id: 1,
     img: "../image/2.png",
     title: "Rustic Vase Set",
     price: "£220",
@@ -47,12 +48,14 @@ const ceramics = [
     popular: true,
   },
   {
+    id: 2,
     img: "../image/3.png",
     title: "The Silky Vase",
     price: "£250",
     newProduct: true,
   },
   {
+    id: 3,
     img: "../image/4.png",
     title: "The Lucy Lamp",
     price: "£250",
@@ -60,12 +63,14 @@ const ceramics = [
     popular: true,
   },
   {
+    id: 4,
     img: "../image/5.png",
     title: "The Dandy chair",
     price: "£150",
     newProduct: true,
   },
   {
+    id: 5,
     img: "../image/6.png",
     title: "The Dandy chair",
     price: "£350",
@@ -73,12 +78,14 @@ const ceramics = [
     popular: true,
   },
   {
+    id: 6,
     img: "../image/7.png",
     title: "Rustic Vase Set",
     price: "£200",
     newProduct: true,
   },
   {
+    id: 7,
     img: "../image/8.png",
     title: "The Lucy Lamp",
     price: "£120",

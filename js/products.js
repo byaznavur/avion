@@ -8,6 +8,8 @@ function getAllProducts(el) {
     <img src="${el.img}" alt="${el.title}">
     <h3>${el.title}</h3>
     <p>${el.price}</p>
+    <button onClick = "addToCart(${el.id})">Add to cart</button>
+
   </div>
   `;
 }
@@ -67,4 +69,27 @@ function getPage(page) {
     activePage = page;
   }
   getProducts();
+}
+
+function addToCart(id) {
+  let cartProduct = cart.find((el) => el.id === id);
+
+  let proCart = ceramics.find((el) => el.id == id);
+  if (cartProduct) {
+    cart = cart.map((el) => {
+      if (el.id === id) {
+        el.quantity++;
+      }
+      return el;
+    });
+  } else {
+    proCart.quantity = 1;
+    window.alert("New Product !");
+    cart.push(proCart);
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  getCartCount();
+
+  console.log(cart);
 }
