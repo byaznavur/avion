@@ -11,16 +11,6 @@
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/home.css" />
     <title>Products | Avion</title>
-
-    <style>
-      .active {
-        background-color: red;
-      }
-
-      ul {
-        display: flex;
-      }
-    </style>
   </head>
   <body>
     <div class="loading">Loading...</div>
@@ -102,9 +92,12 @@
               </select>
             </div>
 
-            <div>
-              <span class="product-total"></span
-              ><input class="search" type="text" placeholder="Search" />
+            <div class="searchProducts">
+              <div class="total">
+                <p>Total Products</p>
+                (<span class="product-total"></span>)
+              </div>
+              <input class="search" type="text" placeholder="Search" />
             </div>
 
             <div class="product-cards"></div>

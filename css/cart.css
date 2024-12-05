@@ -1,0 +1,14 @@
+.cart-section {
+  margin-top: 130px;
+
+  h2 {
+    font-family: Clash Display;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(42, 37, 75, 1);
+  }
+}

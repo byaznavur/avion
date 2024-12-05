@@ -6,8 +6,8 @@ function getAllProducts(el) {
   return `
   <div class="all-cards">
     <img src="${el.img}" alt="${el.title}">
-    <h3>${el.title}</h3>
-    <p>${el.price}</p>
+   <span> <h3>${el.title}</h3>
+    <p>${el.price}</p></span>
     <button onClick = "addToCart(${el.id})">Add to cart</button>
 
   </div>
