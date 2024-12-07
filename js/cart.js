@@ -1,22 +1,26 @@
 const cartCards = document.querySelector(".cart-cards");
-
+const productsSumma = document.querySelector(".productsSumma");
 function getCardCart(el) {
   return `
-    <div>
-  <div>
+    <div class = "cart-card">
+  <div class = "cardImage">
     <img src = ${el.img} alt = ${el.title}/>
-     <h2>${el.title}</h2>
+   <div>
+    <h2>${el.title}</h2>
      <p>${el.price}</p>
+   </div>
   </div>
      
-   <div>
+   <div class = "onDicInc">
      <button onClick = decQuantity(${el.id})>-</button>
-     <button>${el.quantity}</button>
+     <span>${el.quantity}</span>
      <button onClick = incQuantity(${el.id})>+</button>
     </div>
-    <div>
-    <h3> Sum:   </h3>
+    <div class = "sumProduct">
+    <h3> Sum: ${el.quantity * +el.price}  </h3>
     </div>
+
+    
     </div>
     `;
 }
@@ -31,6 +35,19 @@ function getProductCart() {
 
 getProductCart();
 
+function getSummaProduct() {
+  const totalSum = cart.reduce(
+    (total, el) => total + el.price * el.quantity,
+    0
+  );
+
+  if (productsSumma) {
+    productsSumma.textContent = `Umumiy summa: ${totalSum} so'm`;
+  }
+}
+
+getSummaProduct();
+
 function incQuantity(id) {
   cart = cart.map((el) => {
     if (el.id === id) {
@@ -41,6 +58,8 @@ function incQuantity(id) {
   });
 
   getProductCart();
+  getSummaProduct();
+
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
@@ -62,6 +81,7 @@ function decQuantity(id) {
       return el;
     });
   }
+  getSummaProduct();
 
   getProductCart();
   localStorage.setItem("cart", JSON.stringify(cart));
