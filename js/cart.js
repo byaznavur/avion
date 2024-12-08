@@ -7,7 +7,7 @@ function getCardCart(el) {
     <img src = ${el.img} alt = ${el.title}/>
    <div>
     <h2>${el.title}</h2>
-     <p>${el.price}</p>
+     <p>${el.price} $</p>
    </div>
   </div>
      
@@ -17,7 +17,7 @@ function getCardCart(el) {
      <button onClick = incQuantity(${el.id})>+</button>
     </div>
     <div class = "sumProduct">
-    <h3> Sum: ${el.quantity * +el.price}  </h3>
+    <h3> Sum: ${el.quantity * +el.price} $ </h3>
     </div>
 
     
@@ -42,7 +42,7 @@ function getSummaProduct() {
   );
 
   if (productsSumma) {
-    productsSumma.textContent = `Umumiy summa: ${totalSum} so'm`;
+    productsSumma.textContent = `Umumiy summa: ${totalSum} $`;
   }
 }
 
